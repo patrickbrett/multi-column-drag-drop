@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.toolbar {
+  background: lightgrey;
+  display: inline-block;
+}
+
+.tool {
+  background: grey;
+  width: 98px;
+  height: 98px;
+  border: 1px solid #444;
+  user-select: none;
+}
+
+.dragging:hover {
+  height: 96px;
+  border-top: 3px solid #822;
+}
+
+.floating {
+  background: #666;
+  position: fixed;
+  pointer-events: none;
+}
